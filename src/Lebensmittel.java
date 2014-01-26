@@ -8,10 +8,10 @@ public abstract class Lebensmittel {
 		this.name = name;
 		this.menge = menge;
 	}
-	
 	public abstract boolean essen();
 	
 	public abstract boolean trinken();
 	
 	public abstract String status();
+	
 }

@@ -16,7 +16,7 @@ public class Kuehlschrank {
 		kuehlschrank[fuellstand++] = (new Brot(3, 1000));
 		kuehlschrank[fuellstand++] = (new Wurst("Soja Spezial", 100));
 		kuehlschrank[fuellstand++] = (new Wasser("Still", 2000));
-	}
+	} 
 	
 	public void auflisten() {
 		for (int i = 0; i < fuellstand; i++) {
