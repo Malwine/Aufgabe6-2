@@ -7,7 +7,7 @@ public class Wurst extends Speise	{
 
 	public boolean essen() {
 		if (menge >= 0) {          //otherwise menge will be negative at some point
-			menge = menge - 20; 
+			menge = menge - 10; 
 			if (menge <= 0) {menge = 0; }
 		}
 		return true;
