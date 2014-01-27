@@ -5,11 +5,18 @@ public class Wurst extends Speise	{
 		super(name, menge);
 	}
 
-	public int essen() {
-		return (menge - 10);
+	public boolean essen() {
+		if (menge >= 20) {          //otherwise menge will be negative at some point
+			menge = menge - 20; }
+		return true;
 	}
 
 	public boolean trinken() {
 		return false;
 	}
+	
+	public String status() {
+		return ("Wurst: " + name + " " + menge + "g");
+	}
+	
 }

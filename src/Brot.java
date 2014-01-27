@@ -16,6 +16,8 @@ public class Brot extends Speise {
 	}
 	
 	public boolean essen() {
+		if (menge >= 50) {          //otherwise menge will be negative at some point
+			menge = menge - 50; }
 		return true;
 	}
 

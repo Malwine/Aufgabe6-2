@@ -9,8 +9,4 @@ public abstract class Speise extends Lebensmittel{
 		return true;
 	}
 
-//	public String status() {
-//		return ("Speise " + name + menge + "g");
-//	}
-
 }
