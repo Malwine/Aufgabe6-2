@@ -5,16 +5,8 @@ public abstract class Getraenk extends Lebensmittel{
 		super(name, menge);
 	}
 
-	public boolean essen(int menge) {
-		return false;
-	}
-
 	public boolean trinken(int menge) {
-		return false;
-	}
-
-	public String status() {
-		return null;
+		return true;
 	}
 
 	
