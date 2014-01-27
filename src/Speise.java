@@ -1,5 +1,5 @@
 
-public class Speise extends Lebensmittel{
+public abstract class Speise extends Lebensmittel{
 
 	public Speise(String name, int menge) {
 		super(name, menge);
@@ -9,11 +9,8 @@ public class Speise extends Lebensmittel{
 		return true;
 	}
 
-	public boolean trinken(int menge) {
-		return false;
-	}
+//	public String status() {
+//		return ("Speise " + name + menge + "g");
+//	}
 
-	public String status() {
-		return ("Speise " + name + menge + "g");
-	}
 }
