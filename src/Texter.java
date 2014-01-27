@@ -59,10 +59,16 @@ public class Texter {
 		System.out.println("");
 		
 		System.out.println("---MATE---");
-		Mate neueMate = new Mate("Flora Power", 330);
+		Mate neueMate = new Mate("Flora Power");
 		System.out.println(neueMate.status());
 		neueMate.trinken();					
-		
+		System.out.println(neueMate.status());
+		neueMate.trinken();		
+		neueMate.trinken();		
+		neueMate.trinken();		
+		neueMate.trinken();		
+		neueMate.trinken();	
+		System.out.println(neueMate.status()); //mate empty - output should be 0
 	}
 
 }

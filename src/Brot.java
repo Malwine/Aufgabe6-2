@@ -16,9 +16,10 @@ public class Brot extends Speise {
 	}
 	
 	public boolean essen() {
-		if (menge >= 0) {          //otherwise menge will be negative at some point
-			menge = menge - 50; 
-			if (menge <= 0) {menge = 0; }
+		if (menge >= 0) {        		  //if there is brot left
+			menge = menge - 50;  		  //eat brot
+			if (menge <= 0) {menge = 0; } //if you eat more although its empty... it will be empty still... 
+										  //otherwise it would get negative
 		}
 		return true;
 	}

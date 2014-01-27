@@ -10,9 +10,9 @@ public class Wasser extends Getraenk {
 	}
 
 	public boolean trinken() {
-		if (menge >= 0) {  
-			menge = menge - 200;
-			if (menge <= 0) {menge = 0; }
+		if (menge >= 0) {     						//if there is water left 
+			menge = menge - 200;					// you can drink it
+			if (menge <= 0) {menge = 0; }			//if you drink more although its empty... it will be empty still...
 		}
 		return true;
 	}
