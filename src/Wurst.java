@@ -1,17 +1,15 @@
 
-public class Wurst extends Speise{
+public class Wurst extends Speise	{
 
 	public Wurst(String name, int menge) {
 		super(name, menge);
 	}
 
-	public boolean essen() {
-		return false;
+	public int essen() {
+		return (menge - 10);
 	}
 
 	public boolean trinken() {
 		return false;
 	}
-
-
 }
